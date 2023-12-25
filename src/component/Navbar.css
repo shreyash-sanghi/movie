@@ -1,0 +1,146 @@
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(21, 21, 21);
+    height: 5rem;
+    /* border: 2px solid white; */
+}
+#navlist{
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+#navlist ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+#navlist ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: larger;
+    text-decoration: none;
+}
+.navlink{
+    text-decoration: none;
+    color: white;
+}
+.navlink :hover{
+    color: rgb(133, 135, 137);
+}
+#navlist ul li:hover{
+color: rgb(158, 159, 160);
+}
+.logo{
+    width: 8vw;
+    height: 4rem;
+    margin-left: 20px;
+}
+#searchtag{
+display: flex;
+ justify-content:space-around;
+ align-items: center;
+   width: 65%;
+   border-radius: 10px;
+}
+#searchbutton{
+ display: flex;
+}
+#input{
+    font-size: medium;
+    width: 70%;
+    height: 25px;
+}
+#search{
+    font-size: larger;
+}
+@media screen and (max-width:500px) {
+    #container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    #navlist{
+        width: 100%;
+        margin-right: 60px;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    #searchtag{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+       width: 100%;
+    }
+    .logo{
+        width: 13vw;
+        height: 2rem;
+    }
+    #input{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:800px) {
+    #container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    #navlist{
+        width: 100%;
+        margin-right: 60px;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    #searchtag{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+       width: 100%;
+    }
+    .logo{
+        width: 13vw;
+        height: 3rem;
+    }
+    #input{
+        width: 70%;
+    }
+
+}
+@media screen and (min-width:801px) and (max-width:1020px) {
+    #container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(21, 21, 21);
+        height: 5rem;
+    }
+    #navlist{
+        display: flex;
+        align-items: center;
+        width: 40%;
+    }
+    #searchtag{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+       width: 60%;
+    }
+    .logo{
+        width: 9vw;
+        height: 3rem;
+    }
+    #input{
+        width: 50%;
+    }
+    #search{
+        font-size: medium;
+    }
+}
